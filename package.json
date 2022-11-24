@@ -1,0 +1,22 @@
+{
+  "name": "myblog",
+  "version": "1.0.0",
+  "author": "reco_luan",
+  "description": "BigLiou's Blog",
+  "repository": "https://github.com/BigLiou/myblog.git",
+  "license": "MIT",
+  "keywords": [
+    "vuepress"
+  ],
+  "scripts": {
+    "dev": "vuepress dev . -t .temp",
+    "build": "vuepress build . --dest dist"
+  },
+  "dependencies": {
+    "lottie-web": "^5.9.6"
+  },
+  "devDependencies": {
+    "vuepress": "1.9.7",
+    "vuepress-theme-reco": "1.6.16"
+  }
+}
