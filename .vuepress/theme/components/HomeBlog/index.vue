@@ -27,15 +27,14 @@
     </div> -->
 
     <LottieCom :lottieJson.sync="kikiJson" class="kiki" />
-    <a href="#anchor"
-      ><LottieCom
-        :lottieJson.sync="gamePadJson"
-        :loop="false"
-        class="gamePad"
-        ref="gamePad"
-        @lottieLoaded="lottieLoaded"
-      />
-    </a>
+    <LottieCom
+      :lottieJson.sync="gamePadJson"
+      :loop="false"
+      class="gamePad"
+      ref="gamePad"
+      @lottieLoaded="lottieLoaded"
+      @click.native="goHero"
+    />
 
     <ModuleTransition delay="0.16">
       <div id="anchor" v-show="recoShowModule" class="home-blog-wrapper">
@@ -142,7 +141,7 @@ export default defineComponent({
         ? { ...initBgImageStyle, ...bgImageStyle }
         : initBgImageStyle
     })
-
+    
     onMounted(() => {
       state.heroHeight = document.querySelector('.kiki').clientHeight
       state.recoShow = true
@@ -175,6 +174,9 @@ export default defineComponent({
         animate.setDirection(-1)
         animate.playSegments([0, 25], false)
       })
+    },
+    goHero(){
+      window.scrollTo(0, this.heroHeight-60)
     },
   },
 })
