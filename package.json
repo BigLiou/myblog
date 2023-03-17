@@ -1,0 +1,26 @@
+{
+  "name": "myblog",
+  "version": "1.0.0",
+  "description": "BigLiou's Blog",
+  "repository": "https://github.com/BigLiou/myblog.git",
+  "scripts": {
+    "dev": "vuepress dev . -t .temp",
+    "build": "vuepress build . --dest dist"
+  },
+  "keywords": [
+    "vuepress"
+  ],
+  "author": "BigLiou",
+  "license": "ISC",
+  "devDependencies": {
+    "vuepress": "^1.9.9",
+    "vuepress-plugin-code-copy": "^1.0.6",
+    "vuepress-plugin-copyright": "^1.0.2",
+    "vuepress-plugin-dynamic-title": "^1.0.0",
+    "vuepress-plugin-graysite": "^0.1.0",
+    "vuepress-theme-reco": "^1.6.17"
+  },
+  "dependencies": {
+    "lottie-web": "^5.10.2"
+  }
+}
