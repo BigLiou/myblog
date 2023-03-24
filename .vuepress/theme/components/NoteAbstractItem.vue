@@ -28,23 +28,6 @@ export default defineComponent({
   -webkit-line-clamp: 2;
 }
 
-.abstract p {
-  height: 50px;
-  line-height: 25px;
-  overflow: hidden;
-  position: relative;
-  margin: 5px 0;
-}
-
-.abstract p::after {
-  content: "";
-  position: absolute;
-  height: 20px;
-  width: 50px;
-  background: linear-gradient(to right, transparent, white 80%);
-  right: 0;
-  bottom: 0;
-}
 </style>
 <style lang="stylus" scoped>
 .abstract-item
