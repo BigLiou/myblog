@@ -26,9 +26,9 @@ module.exports = {
     '/': {
       lang: 'zh-CN'
     },
-    '/en/': {
-      lang: 'en-US'
-    }
+    // '/en/': {
+    //   lang: 'en-US'
+    // }
   },
   // 配置reco主题
   theme: 'reco',
@@ -84,7 +84,7 @@ module.exports = {
       recordIP: true,
       avatar: 'mp',
       pageSize: 10,
-      visitor: false,
+      visitor: true,
       recordIP: true,
       // 设置Bilibili表情包地址
       //emojiCDN: 'https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/emoji/valine/',
@@ -156,19 +156,21 @@ module.exports = {
         minLength: 10,
       },
     ],
-    ['dynamic-title', {
-      //showIcon: 'https://www.typescriptlang.org/favicon-32x32.png?v=8944a05a8b601855de116c8a56d3b3ae',
-      showText: "(｡･∀･)ﾉﾞ",
-      //hideIcon: 'https://www.typescriptlang.org/favicon-32x32.png?v=8944a05a8b601855de116c8a56d3b3ae',
-      hideText: '(⊙ˍ⊙)',
-      recoverTime: 2000,
-    }],
+    //动态title
+    // ['dynamic-title', {
+    //   //showIcon: 'https://www.typescriptlang.org/favicon-32x32.png?v=8944a05a8b601855de116c8a56d3b3ae',
+    //   showText: "(｡･∀･)ﾉﾞ",
+    //   //hideIcon: 'https://www.typescriptlang.org/favicon-32x32.png?v=8944a05a8b601855de116c8a56d3b3ae',
+    //   hideText: '(⊙ˍ⊙)',
+    //   recoverTime: 2000,
+    // }],
     ['vuepress-plugin-code-copy', {
       align: 'bottom',
       color: '#7d7f84',
       successText: 'Copied!',
       staticIcon: false
     }],
+    //网站变灰
     // ['graysite',{
     //   startDate: '2023-03-03 00:00:00',
     //   endDate: '20203-04-04 23:59:59'
