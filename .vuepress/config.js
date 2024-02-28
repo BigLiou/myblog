@@ -4,6 +4,7 @@ const sidebar = require('./sidebar')
 module.exports = {
   title: "BigLiou's Blog",
   description: "BigLiou's Blog",
+  base: '/myblog/',
   head: [
     // 设置网站图标
     [
